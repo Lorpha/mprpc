@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.15)
+project(mprpc)
+add_executable(start_rpc "test/protobuf/main.cc")
+# include_directories("test/protobuf/")
+target_link_libraries(start_rpc protobuf)
